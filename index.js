@@ -5,10 +5,12 @@ let hasBlackJack = false
 let isAlive = false
 let message = ""
 let money = 100;
+let playerName = prompt("Enter your name to start");
 let cardsEl = document.querySelector("#cards-el")
 let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 const moneyEl = document.querySelector("#money-el");
+const playern = document.getElementById("player-name");
 
 //starting the game
 function startGame() {
@@ -76,3 +78,5 @@ function newCard() {
         renderGame()
     }
 }
+
+playern.textContent = playerName
